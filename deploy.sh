@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # === 設定區（請依你專案調整） ===
-REPO_URL="https://github.com/你的帳號/你的Repo.git"
+REPO_URL="https://github.com/DanielYut/ME2025_Midterm3"
 PROJECT_DIR="$HOME/ME2025_Midterm3"
 VENV_DIR="$PROJECT_DIR/.venv"
 PYTHON_BIN="python3"
