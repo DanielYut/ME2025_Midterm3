@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# python3 app.py
 # === 設定區（請依你專案調整） ===
 REPO_URL="https://github.com/DanielYut/ME2025_Midterm3"
 PROJECT_DIR="$HOME/ME2025_Midterm3"
