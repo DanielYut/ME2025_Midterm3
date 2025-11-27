@@ -1,5 +1,46 @@
-{% extends 'index.html' %}
+{% extends "index.html" %}
 
 {% block form %}
+<form action="/product" method="POST" id="addForm">
 
-{% endblock%}
+    <label>日期：</label>
+    <input type="date" id="product_date" name="product_date" required><br><br>
+
+    <label>客戶名稱：</label>
+    <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+    <label>商品種類：</label>
+    <select id="category" name="category" required>
+        <option value="">請選擇種類</option>
+        <option value="主食">主食</option>
+        <option value="飲料">飲料</option>
+        <option value="湯品">湯品</option>
+    </select><br><br>
+
+    <label>商品名稱：</label>
+    <select id="product" name="product_name" required>
+        <option value="">請先選擇種類</option>
+    </select><br><br>
+
+    <label>單價：</label>
+    <input type="number" id="price" name="price" readonly><br><br>
+
+    <label>數量：</label>
+    <input type="number" id="amount" name="product_amount" min="1" value="1" required><br><br>
+
+    <label>小計：</label>
+    <input type="number" id="total" name="product_total" readonly><br><br>
+
+    <label>狀態：</label>
+    <select id="status" name="product_status">
+        <option value="未付款">未付款</option>
+        <option value="已付款">已付款</option>
+        <option value="已完成">已完成</option>
+    </select><br><br>
+
+    <label>備註：</label>
+    <input type="text" id="product_note" name="product_note"><br><br>
+
+    <button type="submit">新增訂單</button>
+</form>
+{% endblock %}
